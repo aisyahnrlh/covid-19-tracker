@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #e7e8ea;
+  background-color: #0e0e23;
+  line-height: 1.15;
+}
+
+select,
+option {
+  font-family: 'DM Sans', sans-serif;
+  color: #13162f;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 100px;
+}
+
+.app h1 {
+  margin-bottom: 15px;
+  animation: animationFadeIn 0.5s forwards;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    margin: 2rem 20px;
+  }
+
+  .app h1 {
+    text-align: center;
+  }
+}
+
+@keyframes animationFadeIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(none);
+  }
+}

@@ -1,0 +1,56 @@
+.map {
+    height: 400px;
+    background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+    padding: 12px;
+    border-radius: 6px;
+    animation: animationFadeIn .5s .6s both;
+}
+
+.map .leaflet-container {
+    height: 100%;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-flag {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.info-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.leaflet-popup-content {
+    margin: 20px;
+}
+
+@media (max-width: 1200px) {
+    .map {
+        height: 300px;
+    }
+}
+
+@keyframes animationFadeIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

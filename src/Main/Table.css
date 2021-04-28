@@ -1,0 +1,39 @@
+.table {
+    height: 260px;
+    width: fit-content;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #0E0E23 #9b9ca7;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.table tr:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.table__flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.table td {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    flex: 0.9;
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+}
+
+.table td strong {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
